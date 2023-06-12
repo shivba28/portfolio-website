@@ -2,6 +2,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 //import '../assets/css/slide.scss';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import skl1 from '../assets/img/meter1.svg';
+import skl2 from '../assets/img/meter2.svg';
+import skl3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png';
 
 export const Skills = () => {
@@ -32,25 +35,25 @@ export const Skills = () => {
                     <Col>
                         <div className='skill-bx'>
                             <h2>
-                                Skills
+                                Programming Skills
                             </h2>
                             <p>*General statement regarding skills*</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider' centerMode={true}>
                                 <div className='item'>
-                                    <img src={''} alt='Image' />
-                                    <h5>Project 1</h5>
+                                    <img src={skl1} alt='Image' />
+                                    <h5>Web Development</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={''} alt='Image' />
-                                    <h5>Project 2</h5>
+                                    <img src={skl2} alt='Image' />
+                                    <h5>SQL programming</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={''} alt='Image' />
-                                    <h5>Project 3</h5>
+                                    <img src={skl3} alt='Image' />
+                                    <h5>C++ Programming</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={''} alt='Image' />
-                                    <h5>Project 4</h5>
+                                    <img src={skl1} alt='Image' />
+                                    <h5>Python Programming</h5>
                                 </div>
                             </Carousel>
                         </div>
