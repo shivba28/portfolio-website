@@ -1,5 +1,4 @@
 import { Container, Row, Col } from 'react-bootstrap';
-//import '../assets/css/slide.scss';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import skl1 from '../assets/img/meter1.svg';
@@ -38,7 +37,7 @@ export const Skills = () => {
                                 Programming Skills
                             </h2>
                             <p>*General statement regarding skills*</p>
-                            <Carousel responsive={responsive} infinite={true} className='skill-slider' centerMode={true}>
+                            <Carousel responsive={responsive} infinite={true} className='skill-slider' >
                                 <div className='item'>
                                     <img src={skl1} alt='Image' />
                                     <h5>Web Development</h5>
