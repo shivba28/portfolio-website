@@ -32,7 +32,7 @@ export default class Project extends Component {
                 <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
                     <Container className="button-wrapper">
                     <img src={proj2} alt="1" />
-                    <button class='pushable' onClick={() => window.open('https://github.com/your-repo', '_blank')}>
+                    <button class='pushable' onClick={() => window.open('https://github.com/shivba28/portfolio-website', '_blank')}>
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">
