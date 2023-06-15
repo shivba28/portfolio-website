@@ -44,19 +44,19 @@ export const Skills = () => {
                             <p>*General statement regarding skills*</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider' >
                                 <div className='item'>
-                                    <img src={skl1} alt='Image' />
+                                    <img src={skl1} alt='Image1' />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={skl2} alt='Image' />
+                                    <img src={skl2} alt='Image2' />
                                     <h5>SQL programming</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={skl3} alt='Image' />
+                                    <img src={skl3} alt='Image3' />
                                     <h5>C++ Programming</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={skl1} alt='Image' />
+                                    <img src={skl1} alt='Image4' />
                                     <h5>Python Programming</h5>
                                 </div>
                             </Carousel>
@@ -66,7 +66,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className='background-image-left' src={colorSharp} />
+            <img className='background-image-left' src={colorSharp}  alt='background'/>
         </section>
     )
 }

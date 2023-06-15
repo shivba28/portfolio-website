@@ -4,7 +4,6 @@ import { config } from "react-spring";
 import proj2 from '../assets/img/project-img1.png';
 import proj3 from '../assets/img/project-img2.png';
 import proj4 from '../assets/img/project-img3.png';
-import colorSharp2 from '../assets/img/color-sharp2.png';
 import { Container } from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css"
