@@ -6,6 +6,8 @@ import proj3 from '../assets/img/project-img2.png';
 import proj4 from '../assets/img/project-img3.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import { Container } from "react-bootstrap";
+import TrackVisibility from "react-on-screen";
+import "animate.css"
 
 const getTouches = (evt) => {
   return (
@@ -138,7 +140,10 @@ export default class Project extends Component {
   render() {
     return (
         <section className="project" id="project">
-      <div
+      <TrackVisibility>
+      {({ isVisible }) =>
+      <div className={isVisible ? "animate__animated animate__slideInRight" : ""}>
+        <div
         style={{ width: "77%", height: "500px", margin: "0 auto" }}
         onTouchStart={this.handleTouchStart}
         onTouchMove={this.handleTouchMove}
@@ -154,7 +159,9 @@ export default class Project extends Component {
           animationConfig={this.state.config}
         />
         </div>
-      </div>
+        </div>
+      </div>}
+      </TrackVisibility>
       {/* <img className='background-image-right' src={colorSharp2} alt='img'/> */}
       </section>
     );

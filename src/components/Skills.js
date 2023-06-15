@@ -5,6 +5,8 @@ import skl1 from '../assets/img/meter1.svg';
 import skl2 from '../assets/img/meter2.svg';
 import skl3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png';
+import TrackVisibility from "react-on-screen";
+import "animate.css"
 
 export const Skills = () => {
     const responsive = {
@@ -32,9 +34,12 @@ export const Skills = () => {
             <Container>
                 <Row>
                     <Col>
+                    <TrackVisibility>
+      {({ isVisible }) =>
+      <div className={isVisible ? "animate__animated animate__slideInLeft" : ""}>
                         <div className='skill-bx'>
                             <h2>
-                                Programming Skills
+                                Skills
                             </h2>
                             <p>*General statement regarding skills*</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider' >
@@ -56,6 +61,8 @@ export const Skills = () => {
                                 </div>
                             </Carousel>
                         </div>
+                        </div>}
+                        </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
