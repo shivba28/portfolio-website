@@ -155,7 +155,7 @@ export default class Project extends Component {
         />
         </div>
       </div>
-      <img className='background-image-right' src={colorSharp2} alt='img'/>
+      {/* <img className='background-image-right' src={colorSharp2} alt='img'/> */}
       </section>
     );
   }
