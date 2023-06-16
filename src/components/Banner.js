@@ -4,14 +4,18 @@ import { ArrowRightCircle } from "react-bootstrap-icons"
 //import headerImg from "../assets/img/header-img.svg"
 import "animate.css";
 import TrackVisibility from 'react-on-screen';
+import "sakura-js/dist/sakura.css";
+import bg1 from "../assets/background/photofunky.gif";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Full Stack Developer", "Game Engineer(UE 5)", "Solidity Programmer"];
+    const toRotate = ["Full Stack", "Game", "Solidity"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
+  
+
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -54,7 +58,7 @@ export const Banner = () => {
                         {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                            <span className="tagline">Welcome to my Portfolio</span>
-                        <div className={isVisible ? "animate__animated animate__tada" : ""}><h1>{`Hi, I'm Shivba Pawar `}<span className="wrap"><br />{text}</span></h1></div>
+                        <div className={isVisible ? "animate__animated animate__tada" : ""}><h1>{`Hi, I'm Shivba Pawar`}<span className="wrap"><br />{text + ` Developer`}</span></h1></div>
                         <p>I am a skilled Computer Science graduate with a degree in Master of Science from California State University, Fullerton.
                         </p>
                         <a href="#contact" style={{textDecoration: 'none'}}><button>Let's connect<ArrowRightCircle size={25} /></button></a>
@@ -65,6 +69,7 @@ export const Banner = () => {
                     </Col>
                 </Row>
             </Container>
+            <div><img src={bg1} alt='bg1' /></div>
         </section>
     )
 }
