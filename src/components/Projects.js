@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
-import proj2 from '../assets/img/project-img1.png';
-import proj3 from '../assets/img/project-img2.png';
-import proj4 from '../assets/img/project-img3.png';
+import proj1 from '../assets/slides/Slide-1.JPG';
+import proj2 from '../assets/slides/Slide-2.JPG';
+import proj3 from '../assets/slides/Slide-3.JPG';
+import proj4 from '../assets/slides/Slide-4.JPG';
+import proj5 from '../assets/slides/Slide-5.JPG';
+import proj6 from '../assets/slides/Slide-6.JPG';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import { Container} from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
@@ -33,7 +36,7 @@ export default class Project extends Component {
       content: (
                 <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
                     <Container className="button-wrapper">
-                    <img src={proj2} alt="1" />
+                    <img src={proj1} alt="portfolio" />
                     </Container>
                 </div>
       ),
@@ -44,55 +47,55 @@ export default class Project extends Component {
       content: (
         <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
           <Container className="button-wrapper">
-            <img src={proj3} alt="2" />
+            <img src={proj2} alt="Propchain"/>
             </Container>
         </div>
 ),
-githubLink: '',
+githubLink: 'https://github.com/shivba28/PropChain',
     },
     {
       key: 3,
       content: (
-        <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
+        <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px', borderRadius: '100px'}}>
             <Container className="button-wrapper">
-            <img src={proj4} alt="3" />
+            <img src={proj3} alt="pacman"/>
             </Container>
         </div>
 ),
-githubLink: '',
+githubLink: 'https://github.com/shivba28/PacMan3D',
     },
     {
         key: 4,
         content: (
             <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
             <Container className="button-wrapper">
-            <img src={proj2} alt="4" />
+            <img src={proj4} alt="ccdp"/>
             </Container>
             </div>
   ),
-  githubLink: '',
+  githubLink: 'https://github.com/shivba28/CCDP',
     },
     {
         key: 5,
         content: (
             <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
             <Container className="button-wrapper">
-            <img src={proj3} alt="5" />
+            <img src={proj5} alt="gameRental" />
             </Container>
             </div>
   ),
-  githubLink: '',
+  githubLink: 'https://github.com/shivba28/Game_Rentel',
     },
     {
         key: 6,
         content: (
             <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
             <Container className="button-wrapper">
-            <img src={proj4} alt="6" />
+            <img src={proj6} alt="mini_proj" />
             </Container>
             </div>
   ),
-  githubLink: '',
+  githubLink: 'https://github.com/shivba28/Mini-Projects',
     },
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };

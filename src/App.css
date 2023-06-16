@@ -361,8 +361,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-bx {
-  width: 77%;
-  height: 700px;
+  width: 75%;
+  height: 650px;
   margin: 0 auto;
   background: #151515;
   border-radius: 64px;
@@ -372,7 +372,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .carousel-container {
-  height: 350px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,7 +405,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
   width: 100%;
   height: auto;
-
+  border-radius: 20px;
 }
 
 .button-wrapper:hover {
@@ -510,11 +510,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contacts Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(90.21deg, #0e030d -5.91%, #fe5ae9 111.58%);
+  /* background-image: url('./assets/background/bunga.png'); */
+  padding: 50px 0 20px 0;
 }
 .contact img {
-  width: 92%;
+  width: 100%;
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
+  }
+  50% {
+      transform: translateY(20px);
+  }
+  100% {
+      transform: translateY(-20px);
+  }
 }
 .contact h2 {
 	font-size: 45px;
