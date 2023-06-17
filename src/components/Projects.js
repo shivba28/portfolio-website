@@ -170,7 +170,10 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
         className="proj-bx"
       >
         <h2>Projects</h2>
-        <p>*A statement regarding project's made*</p>
+        <p>In my project section, I showcase a diverse range of projects that demonstrate my technical proficiency and problem-solving abilities. 
+          These projects highlight my expertise in various areas of software development, including web development, data analysis, and machine learning. 
+          Each project represents a unique challenge that I tackled with creativity, attention to detail, and a strong focus on delivering practical and impactful solutions.
+          </p>
        <div className="carousel-container">
         <Carousel
           slides={this.slides}

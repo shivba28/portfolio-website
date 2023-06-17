@@ -59,7 +59,12 @@ export const Banner = () => {
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                            <span className="tagline">Welcome to my Portfolio</span>
                         <div className={isVisible ? "animate__animated animate__tada" : ""}><h1>{`Hi, I'm Shivba Pawar`}<span className="wrap"><br />{text + ` Developer`}</span></h1></div>
-                        <p>I am a skilled Computer Science graduate with a degree in Master of Science from California State University, Fullerton.
+                        <p>
+                            With a Master of Science degree in Computer Science and a strong foundation in software engineering, I am a highly skilled and motivated professional. 
+                            My expertise lies in full-stack web development, where I have honed my skills in front-end technologies such as React JS and HTML/CSS, as well as back-end technologies including Node.js and SQL. 
+                            I have a proven track record of delivering high-quality projects, optimizing performance, and improving user experiences. 
+                            Combining my technical proficiency with effective problem-solving abilities, I thrive in collaborative environments and excel in delivering innovative solutions. 
+                            With a passion for continuous learning and a drive for excellence, I am poised to contribute to impactful and cutting-edge software development projects.
                         </p>
                         <a href="#contact" style={{textDecoration: 'none'}}><button>Let's connect<ArrowRightCircle size={25} /></button></a>
                         </div>}

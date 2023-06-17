@@ -39,25 +39,29 @@ export const Skills = () => {
       <div className={isVisible ? "animate__animated animate__slideInLeft" : "animate__animated animate__slideOutRight"}>
                         <div className='skill-bx'>
                             <h2>
-                                Skills
+                                Technical Skills
                             </h2>
-                            <p>*General statement regarding skills*</p>
+                            <p>As a software developer, I possess a strong set of technical skills that allow me to create innovative and efficient solutions. My expertise includes:</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider' >
                                 <div className='item'>
                                     <img src={skl1} alt='Image1' />
-                                    <h5>Web Development</h5>
+                                    <h5>Full Stack Web Development</h5>
                                 </div>
                                 <div className='item'>
                                     <img src={skl2} alt='Image2' />
-                                    <h5>SQL programming</h5>
+                                    <h5>Database Management</h5>
                                 </div>
                                 <div className='item'>
                                     <img src={skl3} alt='Image3' />
-                                    <h5>C++ Programming</h5>
+                                    <h5>Server-Side Programming</h5>
                                 </div>
                                 <div className='item'>
                                     <img src={skl1} alt='Image4' />
-                                    <h5>Python Programming</h5>
+                                    <h5>Version Control & Collaboration</h5>
+                                </div>
+                                <div className='item'>
+                                    <img src={skl3} alt='Image3' />
+                                    <h5>Problem Solving & Troubleshooting</h5>
                                 </div>
                             </Carousel>
                         </div>

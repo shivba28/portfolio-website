@@ -236,7 +236,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: url('./assets/background/bg1.png');
   background-position: 100% 100px;
   background-size: 800px 600px;
@@ -290,7 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   width: 10%;
   left: 90%;
-  margin-top: -50px;
+  margin-top: -130px;
   height: auto;
 }
 @keyframes updown {
@@ -362,13 +362,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-bx {
   width: 75%;
-  height: 650px;
+  height: 700px;
   margin: 0 auto;
   background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;  
+  margin-top: -100px;  
 }
 
 .carousel-container {
@@ -533,6 +533,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  margin-left: 30%;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -570,24 +571,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
-.new-email-bx {
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-.new-email-bx::before {
-  content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  border-radius: 20px;
-  position: absolute;
-  z-index: -1;
-  top: -1px;
-  left: -1px;
-  bottom: -1px;
+.social-icon{
+  margin-top: 2.5%;
 }
 .footer img {
   width: 26%;
