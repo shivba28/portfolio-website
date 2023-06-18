@@ -510,7 +510,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contacts Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #0e030d -5.91%, #fe5ae9 111.58%);
+  background: linear-gradient(0.21deg, #2c0528 -5.91%, #9b0387bb 111.58%);
   /* background-image: url('./assets/background/bunga.png'); */
   padding: 50px 0 20px 0;
 }
@@ -564,7 +564,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 10px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -572,15 +572,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .social-icon{
-  margin-top: 2.5%;
+  margin-top: 2%;
 }
-.footer img {
-  width: 26%;
-}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
   color: #B8B8B8;
   letter-spacing: 0.5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }

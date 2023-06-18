@@ -41,6 +41,7 @@ export default class Project extends Component {
                 </div>
       ),
       githubLink: 'https://github.com/shivba28/portfolio-website',
+      liveDemoLink: 'https://shivba28.github.io/portfolio-website/',
     },
     {
       key: 2,
@@ -52,6 +53,7 @@ export default class Project extends Component {
         </div>
 ),
 githubLink: 'https://github.com/shivba28/PropChain',
+liveDemoLink:'',
     },
     {
       key: 3,
@@ -63,6 +65,7 @@ githubLink: 'https://github.com/shivba28/PropChain',
         </div>
 ),
 githubLink: 'https://github.com/shivba28/PacMan3D',
+liveDemoLink:'',
     },
     {
         key: 4,
@@ -74,6 +77,7 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
             </div>
   ),
   githubLink: 'https://github.com/shivba28/CCDP',
+  liveDemoLink:'',
     },
     {
         key: 5,
@@ -85,6 +89,7 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
             </div>
   ),
   githubLink: 'https://github.com/shivba28/Game_Rentel',
+  liveDemoLink:'',
     },
     {
         key: 6,
@@ -96,6 +101,7 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
             </div>
   ),
   githubLink: 'https://github.com/shivba28/Mini-Projects',
+  liveDemoLink:'',
     },
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
@@ -149,10 +155,17 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
     }
   };
 
-  handleLiveDemoClick = () => {
+  handleGithubClick = () => {
     const currentSlide = this.slides[this.state.goToSlide];
     if (currentSlide && currentSlide.githubLink) {
       window.open(currentSlide.githubLink, "_blank");
+    }
+  };
+
+  handleLiveDemoClick = () => {
+    const currentSlide = this.slides[this.state.goToSlide];
+    if (currentSlide && currentSlide.liveDemoLink) {
+      window.open(currentSlide.liveDemoLink, "_blank");
     }
   };
 
@@ -185,7 +198,7 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
        
         <div style={{width: "85%", height: "20%", position:"relative"}}>
        
-        <button class='pushable'  onClick={this.handleLiveDemoClick}>
+        <button class='pushable'  onClick={this.handleGithubClick}>
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">
@@ -194,7 +207,7 @@ githubLink: 'https://github.com/shivba28/PacMan3D',
                     </button>
         </div>
         <div style={{width: "115%", position:"relative", top:"-20%"}}>
-        <button class='pushable'>
+        <button class='pushable' onClick={this.handleLiveDemoClick}>
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">
