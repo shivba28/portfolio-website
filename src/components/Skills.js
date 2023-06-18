@@ -36,7 +36,7 @@ export const Skills = () => {
                     <Col>
                     <TrackVisibility>
       {({ isVisible }) =>
-      <div className={isVisible ? "animate__animated animate__slideInLeft" : "animate__animated animate__slideOutRight"}>
+      <div className={isVisible ? "animate__animated animate__heartBeat" : ""}>
                         <div className='skill-bx'>
                             <h2>
                                 Technical Skills

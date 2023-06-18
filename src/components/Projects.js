@@ -176,7 +176,7 @@ liveDemoLink:'',
           
       <TrackVisibility>
       {({ isVisible }) =>
-      <div className={isVisible ? "animate__animated animate__slideInRight" : "animate__animated animate__slideOutLeft"}>
+      <div className={isVisible ? "animate__animated animate__tada" : ""}>
         <div
         onTouchStart={this.handleTouchStart}
         onTouchMove={this.handleTouchMove}

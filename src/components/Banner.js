@@ -58,7 +58,7 @@ export const Banner = () => {
                         {({ isVisible }) =>
                         <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                            <span className="tagline">Welcome to my Portfolio</span>
-                        <div className={isVisible ? "animate__animated animate__tada" : ""}><h1>{`Hi, I'm Shivba Pawar`}<span className="wrap"><br />{text + ` Developer`}</span></h1></div>
+                        <div className={isVisible ? "animate__animated animate__lightSpeedInLeft" : ""}><h1>{`Hi, I'm Shivba Pawar`}<span className="wrap"><br />{text + ` Developer`}</span></h1></div>
                         <p>
                             With a Master of Science degree in Computer Science and a strong foundation in software engineering, I am a highly skilled and motivated professional. 
                             My expertise lies in full-stack web development, where I have honed my skills in front-end technologies such as React JS and HTML/CSS, as well as back-end technologies including Node.js and SQL. 
