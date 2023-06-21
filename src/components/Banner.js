@@ -75,7 +75,7 @@ export const Banner = () => {
                 </Row>
             </Container>
             <div><img src={bg1} alt='bg1' /></div>
-            <div><img src={bg1} alt='bg2' style={{left: "82%", marginTop:"-350px"}}/></div>
+            <div className="Image"><img src={bg1} alt='bg2' style={{left: "82%", marginTop:"-350px"}}/></div>
         </section>
     )
 }

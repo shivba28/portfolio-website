@@ -67,14 +67,8 @@ export const Contact = () => {
                                 </Col>
                                 <Col>
                                     <textarea rows={6} value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} />
-                                    <button class='pushable' type="submit" style={{marginLeft: "40%", marginTop:"5%"}}>
-                                    <span class="shadow"></span>
-                                    <span class="edge"></span>
-                                    <span class="front">
-                                    {buttonText}
-                                    </span>
-                                    </button>
                                 </Col>
+
                                 {
                                     status.message &&
                                     <Col>
@@ -82,6 +76,13 @@ export const Contact = () => {
                                     </Col>
                                 }
                             </Row>
+                            <button class='pushable btn3' type="submit">
+                                    <span class="shadow"></span>
+                                    <span class="edge"></span>
+                                    <span class="front">
+                                    {buttonText}
+                                    </span>
+                                    </button>
                         </form>
                     </Col>
                 </Row>

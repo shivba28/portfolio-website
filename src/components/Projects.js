@@ -196,18 +196,18 @@ liveDemoLink:'',
         />
         </div>
        
-        <div style={{width: "85%", height: "20%", position:"relative"}}>
+        <div style={{ position:"grid"}}>
        
-        <button class='pushable'  onClick={this.handleGithubClick}>
+        <button class='pushable btn1'  onClick={this.handleGithubClick} style={{marginRight: "20px"}}>
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">
                       Github
                     </span>
                     </button>
-        </div>
-        <div style={{width: "115%", position:"relative", top:"-20%"}}>
-        <button class='pushable' onClick={this.handleLiveDemoClick}>
+        {/* </div>
+        <div style={{width: "115%", position:"relative", top:"-20%"}}> */}
+        <button class='pushable btn2' onClick={this.handleLiveDemoClick}>
                     <span class="shadow"></span>
                     <span class="edge"></span>
                     <span class="front">
