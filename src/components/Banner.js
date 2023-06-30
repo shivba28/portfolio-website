@@ -10,7 +10,7 @@ import bg1 from "../assets/background/photofunky.gif";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Full Stack", "Game", "Solidity"];
+    const toRotate = ["Full Stack", "Game", "Web3"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
