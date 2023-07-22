@@ -719,12 +719,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .contact h2{
     width: 100%;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
-  .contact .btn3{
-    width: 70%;
-    margin-left: 15%;
+  .contact .buttons{
+    margin-left: -35%;
   }
-
   }
