@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Carousel from "react-spring-3d-carousel";
 import { config } from "react-spring";
 import proj1 from '../assets/slides/Slide-1.JPG';
@@ -11,10 +11,38 @@ import colorSharp2 from '../assets/img/color-sharp2.png';
 import { Container} from "react-bootstrap";
 import TrackVisibility from "react-on-screen";
 import "animate.css"
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
 const getTouches = (evt) => {
   return (
     evt.touches || evt.originalEvent.touches // browser API
+  );
+};
+
+
+function BasicModal(open) {
+
+
+  return (
+    <div>
+      <Modal
+        open={open}
+        // onClose={close}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </Typography>
+        </Box>
+      </Modal>
+    </div>
   );
 };
 
@@ -26,8 +54,12 @@ export default class Project extends Component {
     offsetRadius: 2,
     showNavigation: true,
     enableSwipe: true,
-    config: config.wobbly
+    config: config.wobbly,
+    setOpen: false,
   };
+
+  
+  
 
 
   slides = [
@@ -36,7 +68,7 @@ export default class Project extends Component {
       content: (
                 <div style={{width: '450px', height: '450px', margin: '0px auto -100px 0px'}}>
                     <Container className="button-wrapper">
-                    <img src={proj1} alt="portfolio" />
+                    <button onClick={() => BasicModal(true)}><img src={proj1} alt="portfolio" /></button>
                     </Container>
                 </div>
       ),
@@ -155,6 +187,7 @@ liveDemoLink:'',
     }
   };
 
+
   handleGithubClick = () => {
     const currentSlide = this.slides[this.state.goToSlide];
     if (currentSlide && currentSlide.githubLink) {
@@ -168,9 +201,10 @@ liveDemoLink:'',
       window.open(currentSlide.liveDemoLink, "_blank");
     }
   };
+  
 
   render() {
-
+    const currentSlide = this.slides[this.state.goToSlide];
     return (
         <section className="project" id="project">
           
@@ -205,8 +239,7 @@ liveDemoLink:'',
                       Github
                     </span>
                     </button>
-        {/* </div>
-        <div style={{width: "115%", position:"relative", top:"-20%"}}> */}
+        
         <button class='pushable btn2' onClick={this.handleLiveDemoClick}>
                     <span class="shadow"></span>
                     <span class="edge"></span>
@@ -219,6 +252,21 @@ liveDemoLink:'',
         </div>
       </div>}
       </TrackVisibility>
+
+      {currentSlide && this.state.openModal && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={this.handleCloseModal}>
+                &times;
+              </span>
+              {/* Add your modal content here */}
+              <h2>Image Information</h2>
+              <h1>Modal is opened up</h1>
+              <img src={currentSlide.content.props.src} alt="modal-img" />
+            </div>
+          </div>
+        )}
+
       <img className='background-image-right' src={colorSharp2} alt='img'/><br/><br/><br/>
       </section>
     );

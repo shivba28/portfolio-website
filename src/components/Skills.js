@@ -42,7 +42,7 @@ export const Skills = () => {
                                 Technical Skills
                             </h2>
                             <p>As a software developer, I possess a strong set of technical skills that allow me to create innovative and efficient solutions. My expertise includes:</p>
-                            <Carousel responsive={responsive} infinite={true} className='skill-slider' removeArrowOnDeviceType={["desktop", "mobile", "tablet"]} autoPlay={true} autoPlaySpeed={2000}>
+                            <Carousel responsive={responsive} showDots={true} infinite={true} className='skill-slider' removeArrowOnDeviceType={["desktop","mobile", "tablet"]} autoPlay={true} autoPlaySpeed={2000}>
                                 <div className='item'>
                                     <img src={skl1} alt='Image1' />
                                     <h5>Full Stack Web Development</h5>
@@ -62,6 +62,7 @@ export const Skills = () => {
                                 <div className='item'>
                                     <img src={skl3} alt='Image3' />
                                     <h5>Problem Solving & Troubleshooting</h5>
+                                    <br></br>
                                 </div>
                             </Carousel>
                         </div>
